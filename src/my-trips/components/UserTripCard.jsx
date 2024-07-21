@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 const UserTripCard = ({ trip }) => {
   return (
-    <div className="border rounded-lg">
+    <div
+      style={{ background: "rgba(255, 255, 255, 0.6)", borderRadius: "16px" }}
+      className="border rounded-lg"
+    >
       <h2 className="font-bold text-lg p-5 pb-3">
         {trip.userSelection?.city}, {trip.userSelection?.state},{" "}
         {trip.userSelection?.country}
@@ -16,9 +19,7 @@ const UserTripCard = ({ trip }) => {
         </h2>
       </div>
       <Link to={"/view-trip/" + trip.id}>
-        <Button variant="outline" className="ml-5 mb-3 text-red-700">
-          Show Itinerary
-        </Button>
+        <Button className="ml-5 mb-3">Show Itinerary</Button>
       </Link>
     </div>
   );

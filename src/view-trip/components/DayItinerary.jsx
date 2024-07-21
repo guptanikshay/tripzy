@@ -2,7 +2,10 @@ import React from "react";
 
 const DayItinerary = ({ day, data }) => {
   return (
-    <div className="my-4 p-4 border rounded-lg">
+    <div
+      style={{ background: "rgba(255, 255, 255, 0.8)", borderRadius: "16px" }}
+      className="my-4 p-4 border rounded-lg"
+    >
       <h2 className="font-bold text-xl">{day.replace("day", "Day ")}</h2>
       <p className="italic text-orange-600">
         Best time to visit: {data.bestTimeToVisit}

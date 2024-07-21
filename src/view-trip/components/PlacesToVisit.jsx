@@ -10,7 +10,7 @@ const PlacesToVisit = ({ trip }) => {
   });
   return (
     <div>
-      <h2 className="font-bold text-xl">Places to visit</h2>
+      <h2 className="font-extrabold text-xl">Places to visit</h2>
       <div>
         {sortedItinerary.map(([day, data], index) => (
           <DayItinerary key={index} day={day} data={data} />

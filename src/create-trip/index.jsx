@@ -142,14 +142,20 @@ const CreateTrip = () => {
   return (
     <div className="sm:px-10 md:px-32 lg:px-56 xl:px-72 px-5 mt-10">
       <h2 className="font-bold text-3xl">Tell us your travel preferences</h2>
-      <p className="mt-3 text-gray-500 text-xl">
+      <p className="mt-3 text-gray-700 text-xl">
         Just provide some basic information, and our trip planner will generate
         a customized itinerary based on your preferences
       </p>
       <form onSubmit={handleSubmit} className="mt-14">
         <div className="flex flex-col gap-10">
           <div>
-            <h2 className="text-xl my-3 font-medium">
+            <h2
+              className="text-xl my-3 font-medium p-4"
+              style={{
+                background: "rgba(255, 255, 255, 0.5)",
+                borderRadius: "16px",
+              }}
+            >
               Enter your destination 🏖️🍹
             </h2>
             <div className="flex gap-3">
@@ -174,7 +180,15 @@ const CreateTrip = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl my-3 font-medium">No. of days</h2>
+            <h2
+              className="text-xl my-3 font-medium p-4"
+              style={{
+                background: "rgba(255, 255, 255, 0.5)",
+                borderRadius: "16px",
+              }}
+            >
+              No. of days
+            </h2>
             <Input
               placeholder="Enter no. of days (Less than 5)"
               name="days"
@@ -184,7 +198,13 @@ const CreateTrip = () => {
             />
           </div>
           <div>
-            <h2 className="text-xl my-3 font-medium">
+            <h2
+              className="text-xl my-3 font-medium p-4"
+              style={{
+                background: "rgba(255, 255, 255, 0.5)",
+                borderRadius: "16px",
+              }}
+            >
               What is your budget? <br />
               The budget is exclusively used for dining and activity purposes.
             </h2>
@@ -196,16 +216,26 @@ const CreateTrip = () => {
                     formData.budget === item.title ? "border-black" : ""
                   }`}
                   onClick={() => handleBudgetSelect(item.title)}
+                  style={{
+                    background: "rgba(255, 255, 255, 0.8)",
+                    borderRadius: "16px",
+                  }}
                 >
                   <h2 className="text-4xl">{item.icon}</h2>
                   <h2 className="font-bold text-lg">{item.title}</h2>
-                  <h2 className="text-sm text-gray-500">{item.desc}</h2>
+                  <h2 className="text-sm text-gray-700">{item.desc}</h2>
                 </div>
               ))}
             </div>
           </div>
           <div>
-            <h2 className="text-xl my-3 font-medium">
+            <h2
+              className="text-xl my-3 font-medium p-4"
+              style={{
+                background: "rgba(255, 255, 255, 0.5)",
+                borderRadius: "16px",
+              }}
+            >
               Who do you plan on traveling with on your next adventure?
             </h2>
             <div className="pb-4 grid grid-cols-3 gap-5 mt-5">
@@ -216,10 +246,14 @@ const CreateTrip = () => {
                     formData.travelers === item.title ? "border-black" : ""
                   }`}
                   onClick={() => handleTravelerSelect(item.title)}
+                  style={{
+                    background: "rgba(255, 255, 255, 0.8)",
+                    borderRadius: "16px",
+                  }}
                 >
                   <h2 className="text-4xl">{item.icon}</h2>
                   <h2 className="font-bold text-lg">{item.title}</h2>
-                  <h2 className="text-sm text-gray-500">{item.desc}</h2>
+                  <h2 className="text-sm">{item.desc}</h2>
                 </div>
               ))}
             </div>

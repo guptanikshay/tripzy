@@ -44,7 +44,7 @@ const Header = () => {
   };
 
   return (
-    <div className="p-2 shadow-md flex justify-between items-center px-2">
+    <div className="p-2 shadow-lg flex justify-between items-center px-2">
       <a href="/">
         <img src="/logo.png" height={"100px"} width={"100px"} />
       </a>

@@ -173,11 +173,6 @@ foursq api => fsq3cFrVHNABFE4a9Wk+MfXhZg3u5NCAgSfIprWfr8Cr8CA=
 
 
 Generate travel plan for Location: Indore, MP, India, for 3 days for couple with Cheap budget, Give me a Hotels options list with HotelName, HotelAddress, Price, HotelImageURL, Google maps location URL, Rating, Description, and suggest Itinerary with PlaceName, PlaceDetails, Place image URL, Location URL, ticket pricing, Time to travel each of the location for 3 days with each day plan with best time to visit in JSON format
-
-AIzaSyAhm2Lhk7kEAfRx_9S9fpSlErP5AiFmxkU
-
-143967662632-25rbic8q4f12l727p1fia65ljl8gnga5.apps.googleusercontent.com
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
