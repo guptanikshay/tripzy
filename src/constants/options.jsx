@@ -16,14 +16,14 @@ export const TravelerList = [
   {
     id: 3,
     title: "Family",
-    desc: "A solo trip to rejuvenate yourself.",
+    desc: "Spend leisure time with your loved ones",
     icon: "👪",
     people: "3",
   },
   {
     id: 4,
     title: "Friends",
-    desc: "A solo trip to rejuvenate yourself.",
+    desc: "All cool guys and gals",
     icon: "😎",
     people: "4",
   },
@@ -39,13 +39,13 @@ export const BudgetOptions = [
   {
     id: 2,
     title: "Moderate",
-    desc: "Stay conscious of costs",
+    desc: "Keep costs on the average side",
     icon: "💰",
   },
   {
     id: 1,
     title: "Luxury",
-    desc: "Stay conscious of costs",
+    desc: "Don't give a damn about costs",
     icon: "🤑",
   },
 ];

@@ -6,7 +6,7 @@ const InfoSection = ({ trip }) => {
   return (
     <div>
       <img
-        src="/placeholder.jpg"
+        src="/clouds.jpg"
         className="w-full h-[340px] object-cover rounded-xl"
       />
       <div className="flex justify-between items-center">
