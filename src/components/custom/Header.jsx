@@ -18,9 +18,7 @@ const Header = () => {
 
   const [openDialog, setOpenDialog] = useState(false);
 
-  useEffect(() => {
-    console.log(user);
-  }, []);
+  useEffect(() => {}, []);
 
   const login = useGoogleLogin({
     onSuccess: (codeResp) => GetUserProfile(codeResp),
@@ -39,7 +37,6 @@ const Header = () => {
         }
       )
       .then((resp) => {
-        console.log(resp);
         localStorage.setItem("user", JSON.stringify(resp.data));
         setOpenDialog(false);
         window.location.reload();
@@ -90,7 +87,7 @@ const Header = () => {
           <Button onClick={() => setOpenDialog(true)}>Sign In</Button>
         )}
       </div>
-      <Dialog open={openDialog}>
+      <Dialog open={openDialog} onOpenChange={(open) => setOpenDialog(open)}>
         <DialogContent>
           <DialogHeader>
             <DialogDescription>

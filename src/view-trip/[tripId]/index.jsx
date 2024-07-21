@@ -19,7 +19,6 @@ const ViewTrip = () => {
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-      console.log("Document: ", docSnap.data());
       setTrip(docSnap.data());
     } else {
       console.log("No such document");
