@@ -163,14 +163,6 @@ npm install --save react-google-places-autocomplete
             apiKey=""
           /> 
 
-MY api ==> AIzaSyDvb05HHNeTL5zQFY4gom1Vbc-l_7GKwrE
-
-tuber api ==> AIzaSyAJnm0Fgi-cg9He2flax0Ydc-RdcymATPs
-
-foursq api => fsq3cFrVHNABFE4a9Wk+MfXhZg3u5NCAgSfIprWfr8Cr8CA=
-
-
-
 
 Generate travel plan for Location: Indore, MP, India, for 3 days for couple with Cheap budget, Give me a Hotels options list with HotelName, HotelAddress, Price, HotelImageURL, Google maps location URL, Rating, Description, and suggest Itinerary with PlaceName, PlaceDetails, Place image URL, Location URL, ticket pricing, Time to travel each of the location for 3 days with each day plan with best time to visit in JSON format
 // Import the functions you need from the SDKs you need

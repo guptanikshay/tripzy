@@ -11,8 +11,8 @@ function Hero() {
         className="font-extrabold text-[35px] text-center mt-2"
         style={{ background: "rgba(255, 255, 255, 0.5)", borderRadius: "16px" }}
       >
-        Your very own AI Trip Planner <br /> Provides you with Handcrafted
-        Itineraries in seconds
+        Your very own AI trip planner! <br /> Provides you with handcrafted
+        itineraries in seconds!
       </h1>
       <p
         className="font-extrabold text-xl text-center p-2"
