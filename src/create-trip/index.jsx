@@ -156,7 +156,7 @@ const CreateTrip = () => {
                 borderRadius: "16px",
               }}
             >
-              Enter your destination 🏖️🍹
+              Enter your destination below 🏖️🍹
             </h2>
             <div className="flex gap-3">
               <Input
@@ -212,8 +212,10 @@ const CreateTrip = () => {
               {BudgetOptions.map((item, index) => (
                 <div
                   key={index}
-                  className={`p-4 cursor-pointer border rounded-lg hover:shadow-lg ${
-                    formData.budget === item.title ? "border-black" : ""
+                  className={`p-4 cursor-pointer border rounded-lg hover:shadow-2xl ${
+                    formData.budget === item.title
+                      ? "border-black border-8"
+                      : ""
                   }`}
                   onClick={() => handleBudgetSelect(item.title)}
                   style={{
@@ -243,7 +245,9 @@ const CreateTrip = () => {
                 <div
                   key={index}
                   className={`p-4 cursor-pointer border rounded-lg hover:shadow-lg ${
-                    formData.travelers === item.title ? "border-black" : ""
+                    formData.travelers === item.title
+                      ? "border-black border-8"
+                      : ""
                   }`}
                   onClick={() => handleTravelerSelect(item.title)}
                   style={{
